@@ -8,7 +8,7 @@ class NumberGame
         int round =0;
         int se;
         boolean cont;
-        Scanner sc1=new Scanner(System.in);
+        Scanner sca1=new Scanner(System.in);
         int b = (int)(Math.random()*(100-1+1)+1);
         System.out.println("Guess the number between 1 to 100 in 5 attempt :");
         do{
@@ -17,7 +17,7 @@ class NumberGame
             {
                 System.out.println("Guess Remain :"+i_);
                 System.out.println("Enter the Number :");
-                gus=sc1.nextInt();
+                gus=sca1.nextInt();
                 if(gus>b)
                 {
                     System.out.println("Too High !!");
@@ -35,7 +35,7 @@ class NumberGame
             }
             System.out.println("<------ To Play Again ------>");
             System.out.print("y (1) / n (0):");
-            se=sc1.nextInt();
+            se=sca1.nextInt();
             if(se==1)
             {cont=true;}
             else{cont=false;}
